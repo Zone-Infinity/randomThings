@@ -1,0 +1,17 @@
+.title{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 70px;
+    text-align: center;
+}
+
+.user-card {
+    background-color: tomato;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 30px;
+    font-weight: 300;
+}
+
+.value {
+    color: lightgrey;
+}

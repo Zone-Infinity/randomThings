@@ -1,0 +1,27 @@
+html, body{
+    font-family: monospace;
+    color: #00000f;
+}
+
+.title{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 70px;
+    text-align: center;
+}
+
+.user-profiles-button {
+    font-family: monospace;
+    font-weight: 600;
+    flex: 1;
+    padding: 30px;
+    background-color: rgb(118, 186, 255);
+    font-size: 50px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.user-profiles-button:hover {
+    background-color: rgb(85, 170, 255);
+}
+
