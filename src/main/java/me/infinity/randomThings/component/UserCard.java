@@ -15,13 +15,11 @@ public class UserCard extends VerticalLayout {
         final User.Address address = user.address;
         final String addressInString = String.format("%s %s, %s, %s, %s", address.streetNumber, address.streetName, address.city, address.state, address.country);
 
-        String html = String.format("""
-                        <h3>%s</h3>
-                        Email : %s<br>
-                        Phone : %s<br>
-                        Age : %s<br>
-                        Address : %s
-                        """,
+        String html = String.format("<h3>%s</h3>" +
+                        "Email : %s<br>" +
+                        "Phone : %s<br>" +
+                        "Age : %s<br>" +
+                        "Address : %s",
                 user.firstname + " " + user.lastname,
                 user.email,
                 user.phone,
