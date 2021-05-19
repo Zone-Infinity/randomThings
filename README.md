@@ -1,5 +1,8 @@
 # Random Things
+Idea from - [grvxs/randomThings](https://github.com/grvxs/randomThings)
 
+## View Live
+Check out the hosted version [here](https://vaadin-random-things.herokuapp.com/)
 
 
 ## Running and debugging the application
