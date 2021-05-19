@@ -1,7 +1,5 @@
 package me.infinity.randomThings.component;
 
-import com.vaadin.flow.component.html.H3;
-import com.vaadin.flow.component.html.H6;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import me.infinity.randomThings.backend.entity.User;
 
@@ -14,21 +12,22 @@ public class UserCard extends VerticalLayout {
         addClassName("user-card");
         setId(String.valueOf(id.getAndIncrement()));
 
-        final H3 name = new H3(user.firstname + " " + user.lastname);
-        final H6 email = new H6("Email : " + user.email);
-        final H6 phone = new H6("Phone : " + user.phone);
-        final H6 age = new H6("Age : " + user.age);
-
         final User.Address address = user.address;
         final String addressInString = String.format("%s %s, %s, %s, %s", address.streetNumber, address.streetName, address.city, address.state, address.country);
-        final H6 address_ = new H6("Address : " + addressInString);
 
-        add(
-                name,
-                email,
-                phone,
-                age,
-                address_
-        );
+        String html = String.format("""
+                        <h3>%s</h3>
+                        Email : %s<br>
+                        Phone : %s<br>
+                        Age : %s<br>
+                        Address : %s
+                        """,
+                user.firstname + " " + user.lastname,
+                user.email,
+                user.phone,
+                user.age,
+                addressInString);
+
+        getElement().setProperty("innerHTML", html);
     }
 }
