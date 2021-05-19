@@ -1,0 +1,1 @@
+web: java -jar target/random-things-${project.version}.jar $PORT
